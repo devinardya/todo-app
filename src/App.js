@@ -10,7 +10,7 @@ class App extends React.Component {
     render(){
       return (
         <div className="App">
-            <Router basename ={window.location.pathname || ''}>
+            <Router basename ={`${process.env.PUBLIC_URL}/`}>
               <Route exact path="/" component={Home} />
               <Route path="/register" component={Register} />
               <Route path="/login" component={Login} />
